@@ -1,0 +1,497 @@
+@font-face {
+    font-family: Pinyon;
+    src: url(PinyonScript-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Lora", serif;;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+.logo img{
+    max-width: 120px;
+    height: auto;
+}
+
+.navmenu{
+    display: flex;
+}
+.navmenu a{
+    color:black;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover{
+    color: pink;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i{
+    margin-right: 20px;
+    color:black;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all.42s ease;
+}
+
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color: pink;
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: pink;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+section{
+    padding: 11% 10%;
+}
+
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(agorasim.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+    align-items: center;
+}
+.main-text h5{
+    color: rgb(255, 171, 186);
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.main-text h1{
+    color:black;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+.main-text p{
+    color:rgb(255, 97, 166);
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.main-btn{
+    display: inline-block;
+    color: rgb(255, 171, 186);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid rgb(255, 171, 186);
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+.main-btn:hover{
+    background-color: rgb(255, 171, 186);
+    color: rgb(255, 255, 255);
+}
+.main-btn i{
+    vertical-align: middle;
+}
+
+.down-arrow{
+    position: absolute;
+    top:87%;
+    right: 11%;
+}
+.down i{
+    font-size: 30px;
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    padding: 12px 12px;
+}
+
+.down i:hover{
+    background-color:rgb(255, 171, 186) ;
+    color: rgb(0, 0, 0);
+    transition: all .42s ease;;
+}
+#merlias{
+    font-family:Pinyon;
+}
+
+.menufixo{
+    width: 100%; height: 5px; float: left; padding: 50px 5%; background-color: rgb(255, 255, 255); border-top: 5px solid #ffffff; display: flex; display: -webkit-flex; justify-content: center; align-items: center; top: 0; left:0; z-index: 1; 
+    
+}
+
+.center-text h2{
+    color: black;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom:30px;
+}
+.center-text span{
+    color: rgb(255, 171, 186);
+}
+
+.grid-container {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: #000000;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: pink;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+
+
+  
+
+
+  
+  * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-item h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.product-item p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+
+.product-item button {
+    background-color: pink;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-item button:hover {
+    background-color: pink;
+}
+
+/* Responsivo para dispositivos móveis */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact{
+    background-color: pink;
+}
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding:0;
+}
+
+.footer {
+    background-color:pink;
+    color: #fff;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.footer-column h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.footer-column p,
+.footer-column ul {
+    margin: 5px 0;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #ddd;
+}
+
+/* Responsivo para dispositivos móveis */
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+}
+.bxl-instagram, .bxl-youtube, .bxl-facebook{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 150;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    
+}
+
+.filter-container {
+    background-color: #fff;
+    padding: 30px;
+    max-width: 700px;
+    margin: 10% auto 0 auto;
+    border-radius: 190px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+h2 {
+    margin-bottom: 900px;
+    color: #333;
+    gap: 150px;
+}
+
+.filter-form {
+    display: flex; /* Usar flexbox para alinhar os elementos em linha */
+    gap: 100px; /* Espaço entre os elementos filhos */
+}
+
+label {
+    color: #000000; /* Cor do texto do rótulo */
+}
+
+filter-form {
+    padding: 10px; /* Espaço interno dentro do seletor */
+    border: 1px solid #ddd; /* Borda padrão do seletor */
+    border-radius: 50px; /* Borda arredondada do seletor */
+    font-size: 16px; /* Tamanho da fonte */
+    background-color: #f9f9f9; /* Cor de fundo do seletor */
+    color: #333; /* Cor do texto no seletor */
+    width: 400px; /* Aumenta a largura do seletor */
+}
+
+.filter-button {
+    margin-right: 10%; /* Espaço à direita do botão */
+    padding: 10px 20px; /* Espaço interno do botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    background-color: pink; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 50px; /* Borda arredondada do botão */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.filter-button:hover {
+    background-color: #ffffff; /* Cor de fundo ao passar o mouse */
+}
+
+.filter-group {
+    margin-left: 10%; /* Espaço à esquerda do grupo de filtros */
+}
+
+.trending-product {
+    padding: 50px; /* Espaço interno da seção de produtos em tendência */
+}
+
+.endereco a {
+    color: white; /* Altera a cor do texto do link de endereço */
+}
+
+
+
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin: 8 px 0px; /* Ajuste a margem conforme necessário */
+}
+
+.filter-form {
+    display: flex;
+}   
+
+#search {
+    border: 2px solid #ccc; /* Adiciona uma borda */
+    border-radius: 25px; /* Bordas arredondadas */
+    padding: 10px 60px; /* Espaçamento interno */
+    width: 300px; /* Largura desejada */
+    transition: border-color 0.3s; /* Efeito de transição para foco */
+}
+
+#search:focus {
+    border-color: rgb(196, 191, 192); /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+.filter-button {
+    margin-left: 1px; /* Espaçamento entre o campo de pesquisa e o botão */
+    border-radius: 25px; /* Bordas arredondadas para o botão */
+    padding: 10px 20px; /* Ajusta o padding do botão */
+    background-color: pink; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s; /* Efeito de transição para hover */
+}
+
+.filter-button:hover {
+    border-color: rgb(207, 203, 204); /* Cor da borda ao focar */
+    background-color: ; /* Cor ao passar o mouse */
+}
+
+
+
+
+
+
+

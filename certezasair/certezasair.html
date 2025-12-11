@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Saída</title>
+    <style>
+        body {
+            background-image: url(merlias.jpg2.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: "Lora", serif;;
+            color: rgb(177, 201, 237);
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .modal h2 {
+            margin: 0 0 20px;
+        }
+
+        .modal button {
+            background: rgb(177, 201, 237);
+            border: none;
+            color: white;
+            padding: 13px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        .modal button.cancel {
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay" id="confirmationOverlay">
+        <div class="modal">
+            <h2>Você realmente deseja sair do site?</h2>
+            <button id="confirmBtn">Sim</button>
+            <button class="cancel" id="cancelBtn">Não</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('confirmBtn').addEventListener('click', function() {
+            // Redireciona para a página desejada ao clicar em "Sim"
+            window.location.href =  "../login/login.html"; 
+        });
+
+        document.getElementById('cancelBtn').addEventListener('click', function() {
+            // Redireciona para uma página diferente ao clicar em "Não"
+            window.location.href =  "../paginainicial/paginainicial.html"; 
+        });
+
+        // Simular a situação em que o modal é exibido
+        window.onload = function() {
+            document.getElementById('confirmationOverlay').style.display = 'flex';
+        };
+    </script>
+</body>
+</html>

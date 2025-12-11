@@ -1,0 +1,394 @@
+@font-face {
+    font-family: Pinyon;
+    src: url(PinyonScript-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Lora", serif;;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+.logo img{
+    max-width: 120px;
+    height: auto; 
+}
+
+.navmenu{
+    display: flex;
+}
+.navmenu a{
+    color:black;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover{
+    color: pink;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i{
+    margin-right: 20px;
+    color:black;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all.42s ease;
+}
+
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color: pink;
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: pink;
+    z-index: 10001;
+    cursor: pointer;
+    position: relative;
+}
+
+#menu-icon ul{
+    position: absolute;
+    display: none;
+    text-align: center;
+    right: -35px;
+    padding: 10px;
+    width: 100px;
+    background-color: rgba(255, 192, 203, 0.8);
+}
+#menu-icon:hover ul{
+    display: block;
+}
+#menu-icon ul li a{
+    color: black;
+    font-size: small;
+}
+#menu-icon ul li:hover{
+    background-color: rgba(255, 218, 224, 0.8);
+}
+
+section{
+    padding: 11% 10%;
+}
+
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(agorasim.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+    align-items: center;
+}
+.main-text h5{
+    color: rgb(255, 171, 186);
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.main-text h1{
+    color:black;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+.main-text p{
+    color:rgb(255, 97, 166);
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.main-btn{
+    display: inline-block;
+    color: rgb(255, 171, 186);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid rgb(255, 171, 186);
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+.main-btn:hover{
+    background-color: rgb(255, 171, 186);
+    color: rgb(255, 255, 255);
+}
+.main-btn i{
+    vertical-align: middle;
+}
+
+.down-arrow{
+    position: absolute;
+    top:87%;
+    right: 11%;
+}
+.down i{
+    font-size: 30px;
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    padding: 12px 12px;
+}
+
+.down i:hover{
+    background-color:rgb(255, 171, 186) ;
+    color: rgb(0, 0, 0);
+    transition: all .42s ease;;
+}
+#merlias{
+    font-family: Pinyon;
+}
+
+.menufixo{
+    width: 100%; height: 5px; float: left; padding: 50px 5%; background-color: rgb(255, 255, 255); border-top: 5px solid #ffffff; display: flex; display: -webkit-flex; justify-content: center; align-items: center; top: 0; left:0; z-index: 1; 
+    
+}
+
+.center-text h2{
+    color: black;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom:30px;
+}
+.center-text span{
+    color: rgb(255, 171, 186);
+}
+
+.grid-container {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: #000000;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: pink;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background: white;
+}
+
+.logo img {
+    max-width: 120px;
+}
+
+.navmenu {
+    display: flex;
+}
+
+.navmenu a {
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: all .42s ease;
+    text-decoration: none; /* Remove underline */
+}
+
+.navmenu a:hover {
+    color: pink;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i {
+    margin-right: 20px;
+    color: black;
+    font-size: 25px;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover {
+    transform: scale(1.1);
+    color: pink;
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: pink;
+    cursor: pointer;
+    position: relative;
+}
+
+#menu-icon ul {
+    position: absolute;
+    display: none;
+    text-align: center;
+    right: -35px;
+    padding: 10px;
+    background-color: rgba(255, 192, 203, 0.8);
+}
+
+#menu-icon:hover ul {
+    display: block;
+}
+
+#menu-icon ul li {
+    margin: 5px 0; /* Espaçamento entre os itens do menu */
+}
+
+#menu-icon ul li a {
+    color: black;
+    font-size: small;
+    text-decoration: none; /* Remove underline */
+}
+
+#menu-icon ul li:hover {
+    background-color: rgba(255, 218, 224, 0.8);
+}
+
+.container {
+    padding: 100px 10%; /* Espaço para o menu fixo */
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+}
+
+
+.btn-detalhes {
+    background-color: pink;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.btn-detalhes:hover {
+    background-color: rgb(255, 171, 186);
+}
+
+footer {
+    text-align: center;
+    margin-top: 163px;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+.order-tracking {
+    margin: 50px 0; /* Espaçamento superior e inferior */
+    text-align: center;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 20px 0;
+}
+
+.step {
+    flex: 1;
+    position: relative;
+    text-align: center;
+}
+
+.step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    width: 100%;
+    height: 4px;
+    background-color:rgb(0, 0, 0);
+    z-index: -1; /* Fica atrás do ícone e texto */
+}
+
+.step.completed {
+    color: rgb(0, 0, 0);
+}
+
+.step.completed i {
+    color: pink;
+}
+
+.step i {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.step span {
+    display: block;
+    font-size: 14px;
+}
+
+/* Ajuste a cor e o estilo da barra de progresso conforme necessário */

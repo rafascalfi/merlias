@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Ligação ao arquivo CSS -->
+    <title>Finalizar Compra</title>
+    <script>
+        function showPaymentFields() {
+            var paymentMethod = document.getElementById("payment").value;
+            var creditCardFields = document.getElementById("credit-card-fields");
+            var qrCodeField = document.getElementById("qr-code-field");
+            var boletoField = document.getElementById("boleto-field");
+            
+            // Ocultar todos os campos inicialmente
+            creditCardFields.style.display = "none";
+            qrCodeField.style.display = "none";
+            boletoField.style.display = "none";
+            
+            // Mostrar campos com base na opção selecionada
+            if (paymentMethod === "cartao_credito") {
+                creditCardFields.style.display = "block"; // Mostrar campos do cartão de crédito
+            } else if (paymentMethod === "pix" || paymentMethod === "paypal") {
+                qrCodeField.style.display = "block"; // Mostrar QR Code
+                document.getElementById("qr-code-img").src = paymentMethod === "pix" ? "https://via.placeholder.com/150/0000FF/808080?text=QR+Code+PIX" : "https://via.placeholder.com/150/FF0000/FFFFFF?text=QR+Code+PayPal";
+            } else if (paymentMethod === "boleto") {
+                boletoField.style.display = "block"; // Mostrar botão de gerar boleto
+            }
+        }
+
+        function finalizarCompra() {
+            // Redireciona para a página desejada
+            window.location.href = "file:///C:/Users/Giovana%20Nilio/Desktop/Projeto%20final%20-%20Merlias/index.html"; // Caminho absoluto
+        }
+    </script>
+</head>
+<body>
+    <div class="checkout-container">
+        <h1>Finalizar Compra</h1>
+
+        <form action="#" method="post">
+            <!-- Endereço de Entrega -->
+            <div class="form-group">
+                <label for="address">Endereço de Entrega:</label>
+                <input type="text" id="address" name="address" required placeholder="Digite seu endereço completo">
+            </div>
+
+            <!-- Forma de Pagamento -->
+            <div class="form-group">
+                <label for="payment">Forma de Pagamento:</label>
+                <select id="payment" name="payment" required onchange="showPaymentFields()">
+                    <option value="">Selecione uma forma de pagamento</option>
+                    <option value="cartao_credito">Cartão de Crédito</option>
+                    <option value="boleto">Boleto Bancário</option>
+                    <option value="pix">PIX</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+            </div>
+
+            <!-- Campos para Cartão de Crédito -->
+            <div id="credit-card-fields" class="form-group" style="display: none;">
+                <label for="card-number">Número do Cartão:</label>
+                <input type="text" id="card-number" name="card-number" placeholder="Digite o número do seu cartão">
+                
+                <label for="card-expiry">Data de Validade:</label>
+                <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/AA">
+
+                <label for="card-cvv">CVV:</label>
+                <input type="text" id="card-cvv" name="card-cvv" placeholder="CVV">
+            </div>
+
+            <!-- QR Code para PIX ou PayPal -->
+            <div id="qr-code-field" class="form-group" style="display: none; text-align: center;">
+                <label>Escaneie o QR Code:</label>
+                <img src="pix.jpeg" alt="QR Code" id="qr-code-img">
+            </div>
+
+            <!-- Botão para Gerar Boleto -->
+            <div id="boleto-field" class="form-group" style="display: none; text-align: center;">
+                <button type="button" class="btn-generate-boleto">Gerar Boleto</button>
+                <img src="boleto.jpeg" alt="Boleto">
+            </div>
+
+            <!-- Botão de Finalizar Compra -->
+            <button type="button" class="btn-submit" onclick="finalizarCompra()">Finalizar Compra</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+    
+<header>
+  <div class="menufixo">
+   <a href="#" class="logo"><img src="Design sem nome.png" alt=""></a>
+    
+    <ul class="navmenu">
+        <li><a href=../paginainicial/paginainicial.html>Ínicio</a></li>
+        <li><a href=../maisvendidos/maisvendidos.html>Mais vendidos</a></li>
+        <li><a href=../produtos/produtos.html>Produtos</a></li>
+        <li><a href=../parcerias/parcerias.html>Parceiros</a></li>
+        <li><a href=../suporte/suporte.html>Suporte</a></li>
+    </ul>
+
+    <div class="nav-icon">
+        <a href=../produtos/produtos.html><i class='bx bx-search-alt-2'></i></a>
+        <a href=../perfil/perfil.html><i class='bx bx-user'></i></a>
+        <a href=../carrinho/carrinho.html><i class='bx bx-cart'></i></a>
+
+<div class="bx bx-menu" id="menu-icon"></div>
+
+</div>
+</header>
+
+
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Produto - Loja Digital</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    
+
+
+    <div class="product-container">
+        <div class="product-image">
+            <img id="main-image" src="crrosel.jpg" alt="Produto Principal">
+            <div class="thumbnails">
+                <img src="crrosel.jpg" alt="Produto 3" onclick="changeImage('crrosel.jpg')">
+                <img src="um" alt="Produto 2" onclick="changeImage('um')">
+                <img src="perto" alt="Produto 1" onclick="changeImage('perto')">
+                
+            </div>
+ 
+
+        </div>
+        <div class="product-details">
+            <h2>Carrossel</h2>
+            <p class="product-price">R$ 360,00</p>
+
+            <div class="rating">
+                <span>★★★★★</span>
+                <p>(300 avaliações)</p>
+            </div>
+
+            <p class="product-description">
+                Caixa de música cromada em formato de carrossel com cavalinho de balanço em detalhes azul. Uma peça adorável e elegante para decorar e encantar. Imagem meramente ilustrativa
+            </p>
+
+            <div class="quantity">
+                <label for="quantity">Quantidade:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1">
+            </div>
+
+            <div class="actions">
+                <a href=../carrinho/carrinho.html class="btn primary-btn">Finalizar Compra</a>
+                <button id="finalizarCompraBtn" class="btn secondary-btn" >Adicionar ao carrinho</button>
+<div id="mensagem" class="message" style="display: none;">Adicionado com sucesso!</div>
+            </div>
+
+            <!-- Botões adicionais para Tamanhos, Cuidados e Políticas -->
+            <div class="info-buttons">
+                <button class="btn info-btn" onclick="showInfo('size')">Tamanhos</button>
+                <button class="btn info-btn" onclick="showInfo('care')">Cuidados de Uso</button>
+                <button class="btn info-btn" onclick="showInfo('return')">Políticas de Devolução</button>
+            </div>
+
+            <!-- Seções de Informações -->
+            <div id="size" class="info-section">
+                <h3>Tamanho e ajuste</h3>
+                <p>
+                    Medidas: A: 13 cm x L: 8 cm x C: 8 cm
+                   
+                  </p>
+            </div>
+
+            <div id="care" class="info-section" style="display:none;">
+                <h3>Instruções e Cuidados</h3>
+                <p> Material: Liga de Zinco</p>
+            </div>
+
+            <div id="return" class="info-section" style="display:none;">
+                <h3>Devoluções de envio e Políticas de Devolução</h3>
+                <p>Aguarde de 5 a 7 dias para entrega padrão. Este item está disponível para devolução em até 15 dias após o recebimento. </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+    <div class="container">
+        <!-- Primeira Seção de Produtos Relacionados -->
+        <div class="carousel-section">
+            <h2>Produtos relacionados a este item</h2>
+            <div class="carousel">
+                <button class="arrow left" id="leftArrow1">&#9664;</button>
+                <div class="product-grid-wrapper">
+                    <div class="product-grid" id="productGrid1">
+                        <!-- Adicione os itens de produto aqui -->
+                        <div class="product-item">         
+                            <a href="C:/Users/Giovana Nilio/Desktop/projeto final - Merlias/pipoqueira/pipoqueira.html">   
+                         <img src="pipoca.jpeg" alt="Produto 1">
+                            </a> 
+                            <p class="product-name">Pipoqueira elétrica</p>
+                            <p class="product-price">R$ 200,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="faca.jpeg" alt="Produto 2">
+                            <p class="product-name">Kit faca</p>
+                            <p class="product-price">R$ 167,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="forno.jpeg" alt="Produto 3">
+                            <p class="product-name">Mini forno elétrico</p>
+                            <p class="product-price">R$ 139,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="portajoia.jpeg" alt="Produto 4">
+                            <p class="product-name">Porta joia</p>
+                            <p class="product-price">R$ 80,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="saleiro.jpeg" alt="Produto 5">
+                            <p class="product-name">Suporte tempeiros</p>
+                            <p class="product-price">R$ 98,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="bater.jpeg" alt="Produto 6">
+                            <p class="product-name">Processador</p>
+                            <p class="product-price">R$ 931,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="liquidi.jpeg" alt="Produto 7">
+                            <p class="product-name">Liquidificador</p>
+                            <p class="product-price">R$ 219,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="poste.jpeg" alt="Produto 8">
+                            <p class="product-name">Suporte xícaras de café</p>
+                            <p class="product-price">R$ 41,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="pote.jpeg" alt="Produto 9">
+                            <p class="product-name">Pote com tampa</p>
+                            <p class="product-price">R$ 50,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="cabide.jpeg" alt="Produto 10">
+                            <p class="product-name">Cabides de veludo</p>
+                            <p class="product-price">R$ 71,00</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="arrow right" id="rightArrow1">&#9654;</button>
+            </div>
+        </div>
+
+        <!-- Segunda Seção de Produtos Relacionados -->
+        <div class="carousel-section section-spacing">
+            <h2>Mais Produtos Relacionados</h2>
+            <div class="carousel">
+                <button class="arrow left" id="leftArrow2">&#9664;</button>
+                <div class="product-grid-wrapper">
+                    <div class="product-grid" id="productGrid2">
+                        <!-- Adicione os itens de produto aqui -->
+                        <div class="product-item">
+                            <img src="bolo.jpeg" alt="Produto 11">
+                            <p class="product-name">Boleira de vidro</p>
+                            <p class="product-price">R$ 105,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="download.jfif" alt="Produto 12">
+                            <p class="product-name">Prancha decorativa</p>
+                            <p class="product-price">R$799,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="estrelasabonete.jpg" alt="Produto 13">
+                            <p class="product-name">Saboneteira</p>
+                            <p class="product-price">R$ 85,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="jara.jpeg" alt="Produto 14">
+                            <p class="product-name">Jarra de vidro"</p>
+                            <p class="product-price">R$ 50,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="conchabrancaprata.jfif" alt="Produto 15">
+                            <p class="product-name">Concha</p>
+                            <p class="product-price">R$ 35,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="paneladepressõa.jpg" alt="Produto 16">
+                            <p class="product-name">Panela de pressão </p>
+                            <p class="product-price">R$ 270,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="crrosel.jpg" alt="Produto 17">
+                            <p class="product-name">Carrosel</p>
+                            <p class="product-price">R$ 372,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="panelarosa.jpg" alt="Produto 18">
+                            <p class="product-name">Panela coração</p>
+                            <p class="product-price">R$ 335,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="pote2.jpeg" alt="Produto 19">
+                            <p class="product-name">Pote com tampa</p>
+                            <p class="product-price">R$ 67,00</p>
+                        </div>
+                        <div class="product-item">
+                            <img src="ferro.jpeg" alt="Produto 20">
+                            <p class="product-name">Ferro a vapor</p>
+                            <p class="product-price">R$101,00</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="arrow right" id="rightArrow2">&#9654;</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container1">
+    </div>
+        <div class="comments-section">
+            <h2>Comentários dos Compradores</h2>
+
+           <!-- Comentário de exemplo -->
+<div class="comment">
+    <div class="comment-header">
+        <img src="vaca.jfif" alt="Foto do Comprador" class="comment-avatar">
+        <div class="comment-info">
+            <p class="comment-author">Malaquias José</p>
+            <div class="comment-rating">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+        </div>
+    </div>
+    <p class="comment-text">Estou impressionado com a qualidade e a facilidade de navegação deste site! As informações são bem organizadas e a interface é super amigável. Encontrei exatamente o que precisava em poucos cliques. Parabéns à equipe pelo excelente trabalho!.</p>
+</div>
+
+<!-- Adicionar Comentário -->
+<div class="add-comment"></div>
+    <h3>Deixe seu comentário</h3>
+    <form id="commentForm">
+        <label for="commentAvatar">Sua foto:</label>
+        <input type="url" id="commentAvatar" placeholder="URL da sua foto" required>
+        <label for="commentAuthor">Seu nome:</label>
+        <input type="text" id="commentAuthor" placeholder="Seu nome" required>
+        <label for="commentText">Seu comentário:</label>
+        <textarea id="commentText" rows="4" placeholder="Digite seu comentário" required></textarea>
+        <label for="commentRating">Sua nota:</label>
+        <div class="rating-input">
+            <input type="hidden" id="commentRatingValue" name="rating" value="0">
+            <div class="rating-stars">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+        </div>
+        <button type="submit">Adicionar Comentário</button>
+    </form>
+</div>
+
+    <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <p>&copy; 2024 Loja Digital</p>
+    </footer>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('main-image').src = imageSrc;
+        }
+
+        function showInfo(section) {
+            // Oculta todas as seções
+            document.getElementById('size').style.display = 'none';
+            document.getElementById('care').style.display = 'none';
+            document.getElementById('return').style.display = 'none';
+
+            // Exibe a seção correspondente
+            document.getElementById(section).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pinyon+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Adicionando box-sizing para evitar problemas de box model */
+}
+
+body {
+    background: #fffaff;
+    font-family: 'Lato', sans-serif; /* Adicionando uma fonte padrão para o body */
+}
+
+header {
+    background: #ffc1c5;
+    color: #fffff6;
+    font-family: "Pinyon Script", cursive;
+    font-size: 45px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+main {
+    background: #fffaff;
+    padding: 0 30px 30px;
+}
+
+.page-title {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffc1c5;
+    font-size: 40px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+}
+
+section {
+    flex: 1;
+    background: #ffe0e2;
+}
+
+aside {
+    min-width: 250px;
+    margin-left: 30px;
+}
+
+button {
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead tr {
+    border-bottom: 3px solid #ffc1c5;
+}
+
+thead th {
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-transform: normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #0e4880;
+}
+
+tbody tr {
+    border-bottom: 3px solid #ffc1c5;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    padding-left: 13px;
+}
+
+.product img {
+    border-radius: 6px;
+}
+
+.info {
+    margin: 20px;
+}
+
+.name {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.category {
+    font-size: 18px;
+    color: #0e4880;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.qty {
+    background: #fffaff;
+    display: inline-flex;
+    padding: 5px 0;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 60px;
+    border-radius: 20px;
+}
+
+.qty span {
+    margin: 0 10px;
+}
+
+.qty button {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 0;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.qty button:hover {
+    background: #ddd;
+}
+
+.remove {
+    border: 0;
+    background: #fffaff;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.remove:hover {
+    background: #ddd;
+}
+
+aside .box {
+    margin-bottom: 15px;
+    border: 1px solid #fddfe1;
+    background: #ffe0e2;
+}
+
+aside .box header {
+    padding: 15px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #0e4880;
+    font-size: 18px;
+    border-bottom: 3px solid #feccd0;
+}
+
+aside .box .info {
+    padding: 20px;
+}
+
+aside .box .info > div {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+
+aside .box .info > div:last-child {
+    margin: 0;
+}
+
+aside .box .info button {
+    color: #0e4880;
+    font-family: 'Times New Roman', Times, serif;
+    background: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+aside .box footer {
+    padding: 15px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background: #feccd0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao {
+    background: #0e4880;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #fffff6;
+    letter-spacing: 1px;
+}
+
+aside > button:hover {
+    background: #0b3b68;
+}

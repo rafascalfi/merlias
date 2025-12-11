@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merlias Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merlias</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="loginForm">
+            <h1>Login</h1>
+
+            <div class="input-box">
+                <input type="text" id="username" placeholder="Usuário" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Senha" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Lembre-se de mim</label>
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+
+            <button type="submit" class="btn">Entrar</button>
+            <p id="error-message" style="color:red;"></p>
+
+            <div class="register-link">
+                <p>Não tem uma conta?<a href="C:\Users\Giovana Nilio\Desktop\Projeto final - Merlias/cadastro/cadastro.html"> Cadastre-se</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event){
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            // Simulação de validação de usuário e senha
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Usuário e senha de teste (em um ambiente real, você verificaria em um banco de dados)
+            var validUsername = "merliah";
+            var validPassword = "1234";
+
+            if (username === validUsername && password === validPassword) {
+                // Redireciona para a página inicial
+                window.location.href = "C:/Users/Giovana Nilio/Desktop/Projeto final - Merlias/paginainicial/paginainicial.html";
+            } else {
+                // Exibe mensagem de erro
+                document.getElementById("error-message").textContent = "Usuário ou senha incorretos.";
+            }
+        });
+    </script>
+</body>
+</html>
+

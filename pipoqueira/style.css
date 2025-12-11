@@ -1,0 +1,737 @@
+@font-face {
+    font-family: Pinyon;
+    src: url(PinyonScript-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Lora", serif;;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+.logo img{
+    max-width: 120px;
+    height: auto;
+}
+
+.navmenu{
+    display: flex;
+}
+.navmenu a{
+    color:black;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover{
+    color: pink;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i{
+    margin-right: 20px;
+    color:black;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all.42s ease;
+}
+
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color: pink;
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: pink;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+section{
+    padding: 11% 10%;
+}
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(agorasim.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+    align-items: center;
+}
+.main-text h5{
+    color: rgb(255, 171, 186);
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.main-text h1{
+    color:black;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+.main-text p{
+    color:rgb(255, 97, 166);
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.main-btn{
+    display: inline-block;
+    color: rgb(255, 171, 186);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid rgb(255, 171, 186);
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+.main-btn:hover{
+    background-color: rgb(255, 171, 186);
+    color: rgb(255, 255, 255);
+}
+.main-btn i{
+    vertical-align: middle;
+}
+
+.down-arrow{
+    position: absolute;
+    top:87%;
+    right: 11%;
+}
+.down i{
+    font-size: 30px;
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    padding: 12px 12px;
+}
+
+.down i:hover{
+    background-color:rgb(255, 171, 186) ;
+    color: rgb(0, 0, 0);
+    transition: all .42s ease;;
+}
+#merlias{
+    font-family: Pinyon;
+}
+
+.menufixo{
+    width: 100%; height: 5px; float: left; padding: 50px 5%; background-color: rgb(255, 255, 255); border-top: 5px solid #ffffff; display: flex; display: -webkit-flex; justify-content: center; align-items: center; top: 0; left:0; z-index: 1; 
+    
+}
+
+.center-text h2{
+    color: black;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom:20px;
+}
+.center-text span{
+    color: rgb(255, 171, 186);
+}
+
+.grid-container {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: #000000;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color:rgba(255, 255, 255, 0.8);;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: pink;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  
+  * {
+    box-sizing: border-box;
+}
+
+
+
+
+/* Reseta os estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 90px;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 120px;
+    max-width: 1200px;
+    margin-left: auto; /* Centers the container horizontally */
+    margin-right: auto; /* Centers the container horizontally */
+}
+
+
+
+.product-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image img {
+    width: 300px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.thumbnails img {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.thumbnails img:hover {
+    border-color: rgb(61, 98, 135);
+}
+
+.product-details {
+    max-width: 500px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rating span {
+    font-size: 1.5rem;
+    color: rgb(61, 98, 135);
+}
+
+.rating p {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #777;
+}
+
+.product-description {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.quantity {
+    margin-bottom: 20px;
+}
+
+.quantity label {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.quantity input {
+    width: 50px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background-color:rgb(61, 98, 135);
+    color: white;
+}
+
+.secondary-btn {
+    background-color: pink;
+    color: white;
+}
+
+.primary-btn:hover, .secondary-btn:hover {
+    opacity: 0.9;
+}
+
+/* Botões de Informações */
+.info-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.info-btn {
+    background-color: rgb(221, 225, 227);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info-btn:hover {
+    opacity: 0.9;
+}
+
+/* Seções de Informações */
+.info-section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    display: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel-section {
+    position: relative;
+    margin-bottom: 60px; /* Espaço entre seções */
+}
+
+h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.product-grid-wrapper {
+    overflow: hidden;
+    width: 90%;
+}
+
+.product-grid {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.3s ease-in-out;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    -ms-overflow-style: none;  /* IE e Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.product-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.product-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-name {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.product-price {
+    color: rgb(61, 98, 135);
+    font-size: 20px;
+}
+
+.arrow {
+    background-color: pink;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.arrow:hover {
+    background-color: #afafaf;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+}
+
+.section-spacing {
+    margin-top: 60px; /* Espaço entre as duas seções */
+}
+
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 200px);
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 200px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: repeat(1, 200px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+
+
+.container1 {
+    max-width: 200px;
+    margin:  auto;
+}
+
+.comments-section {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 0 auto; /* Centers the section horizontally */
+}
+
+
+h2 {
+    margin-bottom: px;
+    text-align: center;
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.comment-avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.comment-info {
+    flex: 1;
+}
+
+.comment-author {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.comment-rating {
+    color: rgb(61, 98, 135);
+}
+
+.star {
+    font-size: 18px;
+    margin-right: 2px;
+}
+
+.comment-text {
+    margin-top: 10px;
+}
+
+.add-comment {
+    margin-top: 20px;
+}
+
+.add-comment h3 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="url"],
+form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+.rating-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rating-input input[type="radio"] {
+    display: none;
+}
+
+.rating-input label {
+    font-size: 20px;
+    color: rgb(61, 98, 135);
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: pink;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color:rgb(61, 98, 135);
+}
+
+
+
+
+.rating-stars {
+    display: flex;
+    font-size: 10rem; /* Ajuste o tamanho conforme necessário */
+    color: #ddd; /* Cor das estrelas não selecionadas */
+    cursor: pointer;
+}
+
+.rating-stars .star {
+    transition: color 0.2s;
+}
+
+.rating-stars .star:hover,
+.rating-stars .star.selected {
+    color: rgb(61, 98, 135); /* Cor das estrelas selecionadas */
+}
+
+.rating-input {
+    margin-bottom: 1rem; /* Espaçamento para o input de avaliação */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 14px;
+    position: relative;
+    top: -10px;
+    right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.message {
+    color: rgb(0, 0, 0); /* Cor da mensagem */
+    border: 2px solid rgb(255, 255, 255); /* Borda branca */
+    padding: 4px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-top: 1px; /* Espaçamento acima da mensagem */
+    text-align: center; /* Centraliza o texto */
+    width: fit-content; /* Ajusta a largura da mensagem */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+}

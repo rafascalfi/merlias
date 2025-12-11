@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Pinyon;
+    src: url(PinyonScript-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Lora", serif;;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+        background-image: url(merlias.jpg2.jpg);}

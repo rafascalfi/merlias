@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+    
+<header>
+  <div class="menufixo">
+   <a href="#" class="logo"><img src="Design sem nome.png" alt=""></a>
+    
+   <ul class="navmenu">
+    <li><a href="C:/Users/Giovana Nilio/Desktop/Projeto final - Merlias/paginainicial/paginainicial.html">Ínicio</a></li>
+    <li><a href="C:/Users/Giovana Nilio/Desktop/Projeto final - Merlias/maisvendidos/maisvendidos.html">Mais vendidos</a></li>
+    <li><a href="C:/Users/Giovana Nilio/Desktop/Projeto final - Merlias/produtos/produtos.html">Produtos</a></li>
+    <li><a href="C:/Users/Giovana Nilio/Desktop/Projeto final - Merlias/parcerias/parcerias.html">Parceiros</a></li>
+    <li><a href="C:/Users/Giovana Nilio/Desktop/Projeto final - Merlias/suporte/suporte.html">Suporte</a></li>
+</ul>
+
+<div class="nav-icon">
+    <a href="#"><i class='bx bx-search-alt-2'></i></a>
+    <a href="C:/Users/Giovana Nilio/Desktop/Projeto final - Merlias/perfil/perfil.html"><i class='bx bx-user'></i></a>
+    <a href="C:/Users/Giovana Nilio/Desktop/Projeto final - Merlias/carrinho/carrinho.html"><i class='bx bx-cart'></i></a>
+
+<div class="bx bx-menu" id="menu-icon"></div>
+</div>
+</header>
+</div>
+
+
+
+
+
+<div class="filter-container">
+    
+    <form class="filter-form">
+        <div class="filter-group">
+            <label for="category">Categoria:</label>
+            <select id="category" name="category">
+                <option value="all">Todas</option>
+                <option value="electronics">Guarda-sol</option>
+                <option value="clothing">Cadeiras</option>
+                <option value="shoes">Abajur</option>
+                <option value="books">Pranchas</option>
+                <option value="home">Cozinha</option>
+            </select>
+        </div>
+        
+        <button type="submit" class="filter-button">Aplicar Filtros</button>
+    </form>
+</div>
+    
+
+
+
+ <!--Produtos-->
+
+<section class="trending-product" id="trending">
+ <div class="center-text">
+  <h2>Produtos em <span>tendência</span></h2>
+ </div>
+
+<div class="products">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid de Produtos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="almofadaazul.jpg" alt="Produto 1">
+            <h3>Almofada concha </h3>
+            <p>Almofada de concha cinza </p>
+            <h3>$60,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="pufquadradoazul.jfif" alt="Produto 2">
+            <h3>Puf branco e azul </h3>
+            <p>Puf branco e azul com trançados em X </p>
+            <h3>$280,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="anaazul.jpg" alt="Produto 3">
+            <h3>Puf azul/cesto de roupa</h3>
+            <p>Puf azul </p>
+            <h3>Guarda roupa rústico</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="pufbranconovo.jpg" alt="Produto 4">
+            <h3>Puf barnco </h3>
+            <p>Cesto de roupa/puf ivess redondo 
+                          estofado 
+            </p>
+            <h3>$1.500,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="cadeiradeitadarosa.jfif" alt="Produto 5">
+            <h3>Cadeira espreguiçadeira</h3>
+            <p>Na cor rosa</p>
+            <h3>$400,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="cadeirarosadepraia.jfif" alt="Produto 6">
+            <h3>Cadeira Amelie </h3>
+            <p>Na cor rosa forrada com algodão</p>
+            <h3>$230,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="cadeirapraiaazul" alt="Produto 7">
+            <h3>Cadeira Amelie</h3>
+            <p>Na cor azul turquesa</p>
+            <h3>$235,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="cadeirapraiaclara.png" alt="Produto 8">
+            <h3>Cadeira Sophie</h3>
+            <p>Cadeira de tecido of-white xadrez</p>
+            <h3>$205,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="guardasolecadeiras.jfif" alt="Produto 9">
+            <h3>Guarda-sol</h3>
+            <p>Guarda sol com duas cadeiras na cor branca</p>
+            <h3>$500,00</h3>
+            <a href="C:/Users/Giovana Nilio/Desktop/projeto final - Merlias/guardasol/guardasol.html"><button>Comprar</button></a>
+        </div>
+        <div class="product-item">
+            <img src="guardasol.jpeg" alt="Produto 10">
+            <h3>Guarda-sol Charlotte</h3>
+            <p>Na cor branca com detalhes em madeira</p>
+            <h3>505,75</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="guardaazul.png" alt="Produto 11">
+            <h3>Guarda-sol</h3>
+            <p>Na cor azul com detalhes em madeira</p>
+            <h3>$515,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="guardasolazul" alt="Produto 12">
+            <h3>Guarda-sol</h3>
+            <p>Na cor azul com detalhes em madeira</p>
+            <h3>$490,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="abajurbrancoeazul.jpg" alt="Produto 12">
+            <h3>Abajur</h3>
+            <p>Luminária Quarto Porcelana Azul e Branco</p>
+            <h3>$1.099,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="abajur.jfif" alt="Produto 12">
+            <h3>Abajur</h3>
+            <p>Luminária com detalhes fundo do mar </p>
+            <h3>$900,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="abajurazulebranco.jpg" alt="Produto 12">
+            <h3>Abajur</h3>
+            <p>Luminária com detalhes azul</p>
+            <h3>$700,00 </h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="luminaria.jpg" alt="Produto 12">
+            <h3>Abajur</h3>
+            <p>Luminária com detalhes em dourado</p>
+            <h3>$650,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="batedeira.jpg" alt="Produto 12">
+            <h3>Batedeira rosa </h3>
+            <p>Batedeira na cor rosa</p>
+            <h3>$429,99</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="cafeteirorosa.jpg" alt="Produto 12">
+            <h3> Cafeteira Smeg Evangeline</h3>
+            <p> Cafeteira cor rosa de inox com 15 chícaras  </p>
+            <h3>$380,00</h3>
+            <a href="C:/Users/Giovana Nilio/Desktop/projeto final - Merlias/Smeg/smeg.html"><button>Comprar</button></a>
+        </div>
+        <div class="product-item">
+            <img src="lancheira.jpg" alt="Produto 12">
+            <h3>Torradeira</h3>
+            <p>Torradeira na cor branca com detalhes em azul </p>
+            <h3>$280,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="panelasrosacoração.jpg" alt="Produto 12">
+            <h3> Panela de coração</h3>
+            <p>Kit panelas de coração rosa </p>
+            <h3>$300,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="sabao.jfif" alt="Produto 12">
+            <h3>Saboneteira</h3>
+            <p> kit de saboneteira e pote pra colocar algodão e cotonete 
+               com detalhes banhado a ouro
+            </p>
+            <h3>$155,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="sabonete com estrela.jfif" alt="Produto 12">
+            <h3> Saboneteira</h3>
+            <p>Saboneteira com detalhe de uma estrela do mar </p>
+            <h3>$150,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="sabonete.jpg" alt="Produto 12">
+            <h3>Saboneteira </h3>
+            <p>Saboneteira de video com detalhes de palha </p>
+            <h3>$129,99</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="estrelasabonete.jpg" alt="Produto 12">
+            <h3>Saboneteira</h3>
+            <p>Saboneteira em formato de concha</p>
+            <h3>$139,99</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="criadomudocinza.jpg" alt="Produto 12">
+            <h3>Mesa de cabeceira</h3>
+            <p>Mesa de cabeceira cinza de duas gavetas </p>
+            <h3>544,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="craidomudo.jfif" alt="Produto 12">
+            <h3> Mesa de cabeceira</h3>
+            <p>Mesa de cabeceira na cor branca e azul com trêS gavetas</p>
+            <h3>$380,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="gaveteiro.jpg" alt="Produto 12">
+            <h3>Gaveteiro </h3>
+            <p>Gaveteiro de 6 gavetas na cor branca e as gavetas em diferentes tons de azul</p>
+            <h3>$540,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="duplagaveta.png" alt="Produto 12">
+            <h3>Gaveteiro</h3>
+            <p>Gaveteiro de dupla gaveta na cor branca  </p>
+            <h3>$600,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="parederosa.jpg" alt="Produto 12">
+            <h3>Estante rosa </h3>
+            <p>Estante rosa com 3 repartições</p>
+            <h3>$350,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="guardarbranco.jpg" alt="Produto 12">
+            <h3>Baú</h3>
+            <p>Baú rosa e branco</p>
+            <h3>$150,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="cesto.jfif" alt="Produto 12">
+            <h3>Cesto de palha</h3>
+            <p>Cesto ideal para organização</p>
+            <h3>$243,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="cestorosa.jpg" alt="Produto 12">
+            <h3> Cesto</h3>
+            <p>Cesto ideal para roupas</p>
+            <h3>$100,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="brancharosa.jfif" alt="Produto 12">
+            <h3>Prancha</h3>
+            <p>Prancha decorativa 95cm</p>
+            <h3>$649,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="download.jfif" alt="Produto 12">
+            <h3>Prancha </h3>
+            <p>Prancha decorativa 95cm</p>
+            <h3>$700,99</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="pranchaazulrisocs.jpg" alt="Produto 12">
+            <h3>Prancha </h3>
+            <p>Prancha decorativa 95cm</p>
+            <h3>$640,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="pranchaflor.png" alt="Produto 12">
+            <h3>Prancha</h3>
+            <p>Prancha decorativa 95cm</p>
+            <h3>$690,90</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="ventilador.jpg" alt="Produto 12">
+            <h3>Ventilador </h3>
+            <p>Ventilador rosa </p>
+            <h3>$250,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="pratos concha.jpg" alt="Produto 12">
+            <h3>Pratos</h3>
+            <p>Kit de 4 pratos de concha </p>
+            <h3>$400,00 </h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="quadrosazul.jpg" alt="Produto 12">
+            <h3>Kit de 4 Quadros </h3>
+            <p> Kit de 4 quadros azul </p>
+            <h3>$750,00</h3>
+            <button>Comprar</button>
+        </div>
+        <div class="product-item">
+            <img src="crrosel.jpg" alt="Produto 12">
+            <h3>Carrosel</h3>
+            <p>Carrosel  de ferro com 3 cavalos</p>
+            <h3>$360,00</h3>
+            <button>Comprar</button>
+        </div>
+    </div>
+</body>
+</div>
+</section>
+
+
+    
+                                <footer class="footer">
+                                <div class="footer-column">
+                                        <h3>Redes Sociais</h3>
+                                     <a href="#"><i class='bx bxl-facebook'></i></a>
+                                            <a href="#"><i class='bx bxl-instagram' ></i></a>
+                                            <a href="#"><i class='bx bxl-youtube' ></i></a>
+                                            <a href="#"><i class='bx bxl-youtube' ></i></a>
+                                    </div>
+                                    <div class="footer-column">
+                                        <h3>Termos</h3>
+                                        <ul>
+                                            <li><a href="#">Política de Privacidade</a></li>
+                                            <li><a href="#">Política de Reembolso</a></li>
+                                            <li><a href="#">Política de Troca</a></li>
+                                            <li><a href="#">Termos de Uso</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-column">
+                                        <h3>Contato</h3>
+                                        <p>Email: marlias@gmail.com</p>
+                                        <p>Telefone: (11) 4002-8922</p>
+                                        <p>Endereço: Rua Augusta Medice, 639, São Paulo, Brasil</p>
+                                    </div>
+                                </footer>
+                            </body>
+
+
+
+
+
+
+
+
+              <script src="java.js"></script>
+
+
+</body>
+</html>

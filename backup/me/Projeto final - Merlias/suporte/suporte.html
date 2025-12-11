@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suporte</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Como podemos te ajudar?</h3>
+          <p class="text">
+            Está tendo problemas? Entre em contato conosco, ou reporte sua
+            situação ao lado!
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="local.jpeg" class="icon" alt="" />
+              <p>
+                Rua Augusta Medice, 369 - Consolação, São Paulo - SP, 01305-100
+              </p>
+            </div>
+            <div class="information">
+              <img src="mensagem.jpeg" class="icon" alt="" />
+              <p>merlias@gmail.com</p>
+            </div>
+            <div class="information">
+              <img src="telefone.jpeg" class="icon" alt="" />
+              <p>(11) 4002-8922</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form id="supportForm" autocomplete="off">
+            <h3 class="title">Ajuda</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" placeholder="Nome" required />
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" placeholder="Email" required />
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" placeholder="Telefone" required />
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input" placeholder="Reporte seu problema aqui:"></textarea>
+            </div>
+            <input type="submit" value="Enviar" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('supportForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Impede o comportamento padrão do formulário
+        
+        // Redireciona para outra página
+        window.location.href = "../obrigadasuporte/obrigadasuporte.html"; 
+      });
+    </script>
+  </body>
+</html>
+
+
+
+
+

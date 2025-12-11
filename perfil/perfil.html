@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style type="text/css">
+        /* Reseta estilos padrões */
+        html {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+            line-height: 1.4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            color: #404040;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilos principais do perfil */
+        .seccion-perfil-usuario {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .seccion-perfil-usuario .perfil-usuario-header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(#fdc0c4, transparent);
+            margin-bottom: 1.25rem;
+        }
+
+        .seccion-perfil-usuario .perfil-usuario-portada {
+            position: relative;
+            width: 90%;
+            height: 17rem;
+            background-image: linear-gradient(45deg, #ffc1dd, #ffc1c5);
+            border-radius: 0 0 20px 20px;
+        }
+
+        .seccion-perfil-usuario .perfil-usuario-portada .boton-portada {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            border: 0;
+            border-radius: 8px;
+            padding: 12px 25px;
+            background-color: rgba(0, 0, 0, .5);
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .seccion-perfil-usuario .perfil-usuario-avatar {
+            position: absolute;
+            bottom: -40px;
+            left: calc(50% - 90px);
+            width: 180px;
+            height: 180px;
+            background-color: #d5e2ff;
+            border: 7px solid #FFFFFF;
+            border-radius: 50%;
+            box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .seccion-perfil-usuario .perfil-usuario-avatar img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .seccion-perfil-usuario .perfil-usuario-avatar .boton-avatar {
+            position: absolute;
+            left: -2px;
+            top: -2px;
+            width: 45px;
+            height: 45px;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+            cursor: pointer;
+        }
+
+        .seccion-perfil-usuario .perfil-usuario-body {
+            width: 70%;
+            max-width: 750px;
+            text-align: center;
+        }
+
+        .seccion-perfil-usuario .perfil-usuario-body .titulo {
+            font-size: 1.75em;
+            margin-bottom: 0.5rem;
+            text-align: center; /* Centraliza o título */
+        }
+
+        .seccion-perfil-usuario .perfil-usuario-body .texto {
+            color: #848484;
+            font-size: 0.95em;
+        }
+
+        .seccion-perfil-usuario .perfil-usuario-footer,
+        .seccion-perfil-usuario .perfil-usuario-bio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centraliza as informações */
+            padding: 1.5rem 2rem;
+            box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+            background-color: #fff;
+            border-radius: 20px;
+        }
+
+        .seccion-perfil-usuario .perfil-usuario-bio {
+            margin-bottom: 1.25rem;
+            text-align: center;
+        }
+
+        .seccion-perfil-usuario .lista-datos {
+            width: 50%;
+            list-style: none;
+            display: flex;
+            flex-direction: column; /* Coloca os itens em coluna */
+            align-items: flex-start; /* Alinha à esquerda */
+        }
+
+        .seccion-perfil-usuario .lista-dados {
+            width: 50%;
+            list-style: none;
+            display: flex;
+            flex-direction: column; /* Coloca os itens em coluna */
+            align-items: flex-start; /* Alinha à esquerda */
+        }
+
+        .seccion-perfil-usuario .lista-dados li {
+            padding: 5px 0;
+        }
+
+        .seccion-perfil-usuario .lista-dados li>.icono {
+            margin-right: 1rem;
+            font-size: 1.2rem;
+            vertical-align: middle;
+        }
+
+        /* Estilo do botão Meus Pedidos */
+        .btn-pedidos {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 10px 20px;
+            background-color: pink; /* Cor de fundo */
+            color: #fff; /* Cor do texto */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn-pedidos:hover {
+            background-color: #ff69b4; /* Cor ao passar o mouse */
+        }
+
+        /* Adaptação para dispositivos menores */
+        @media (max-width: 750px) {
+            .seccion-perfil-usuario .lista-dados {
+                width: 100%;
+                align-items: center; /* Alinha ao centro em telas pequenas */
+            }
+
+            .seccion-perfil-usuario .perfil-usuario-portada,
+            .seccion-perfil-usuario .perfil-usuario-body {
+                width: 95%;
+            }
+        }
+
+        /* Estilo da seta de voltar */
+        .back-arrow {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 24px;
+            color: #333;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .back-arrow:hover {
+            color: #ffffff;
+        }
+
+        .back-arrow i {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="seccion-perfil-usuario">
+
+        <div class="perfil-usuario-header">
+            <div class="perfil-usuario-portada">
+                <!-- Seta de voltar para a página inicial -->
+                <a href=../paginainicial/paginainicial.html class="back-arrow">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+
+                <div class="perfil-usuario-avatar">
+                    <img src="merliah.jpg" alt="img-avatar">
+                    <button type="button" class="boton-avatar">
+                        <i class="far fa-image"></i>
+                    </button>
+                </div>
+                <button type="button" class="boton-portada">
+                    <i class="far fa-edit"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="perfil-usuario-body">
+            <div class="perfil-usuario-bio">
+                <h3 class="titulo">Merliah Summers</h3>
+            </div>
+            <div class="perfil-usuario-footer">
+                <ul class="lista-dados">
+                    <li><i class="icono fas fa-user"></i> Usuário: Summers</li>
+                    <li><i class="icono fas fa-phone-alt"></i> Telefone: 11 99142-8536</li>
+                    <li><i class="icono fas fa-building"></i> Componente: Apartamento</li>
+                </ul>
+                <ul class="lista-dados">
+                    <li><i class="icono fas fa-map-marker-alt"></i> São Paulo</li>
+                    <li><i class="icono fas fa-calendar-alt"></i> 16/09/2000</li>
+                    <li><i class="icono fas fa-share-alt"></i> Redes sociais</li>
+                </ul>
+            </div>
+            <!-- Botão Meus Pedidos -->
+            <a href=../meuspedidos/meuspedidos.html class="btn-pedidos">Meus Pedidos</a>
+        </div>
+    </section>
+
+</body>
+
+</html>
+

@@ -1,0 +1,74 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #eaeff0, #f4fafe);
+    background-image: url(merlias.jpg2.jpg);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    color: #333;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h1 {
+    color: rgb(61, 98, 135);
+    font-family: "Lora";
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #f08ead;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgb(61, 98, 135);
+    transform: scale(1.1);
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-between; /* Para espaçamento uniforme */
+    gap: 10px; /* Espaçamento entre as imagens */
+    margin: 20px 0; /* Ajuste a margem conforme necessário */
+}
+
+.img-container img {
+    max-width: 30%; /* Ajuste o tamanho das imagens conforme necessário */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

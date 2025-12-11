@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="signup-section">
+            <header class="pinyon">Cadastre-se</header>
+            <div class="social-buttons">
+                <button><i class='bx bxl-google'></i> Usar Google</button>
+                <button><i class='bx bxs-phone'></i> Usar Telefone</button>
+            </div>
+
+            <form id="signup-form">
+                <input type="text" placeholder="Nome Completo" required>
+                <input type="email" placeholder="Endereço de Email" required>
+                <input type="password" placeholder="Senha" required>
+                <input type="password" placeholder="Confirmar senha" required>
+                <button type="submit" class="btn">Cadastrar</button>
+            </form>
+            <div id="success-message" style="display:none;">
+                <p>Cadastro realizado com sucesso! Redirecionando para login...</p>
+            </div>
+            <center><a href="../login/login.html">Já possui uma conta? <b>Iniciar sessão</b></a></center>
+        </div>
+
+        <div class="login-section">
+            <header class="pinyon">Login</header>
+            <div class="social-buttons">
+                <button><i class='bx bxl-google'></i> Usar Google</button>
+                <button><i class='bx bxs-phone'></i> Usar Telefone</button>
+            </div>
+            <div class="separator">
+                <div class="line"></div>
+                <p>Ou</p>
+                <div class="line"></div>
+            </div>
+            <form action="../paginainicial/paginainicial.html" method="post">
+                <input type="text" placeholder="Usuário" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit" class="btn">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
